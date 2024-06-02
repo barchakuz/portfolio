@@ -11,9 +11,9 @@ function Navbar() {
         </div>
          <ul className='navbar-head-list'>
           <a href='#'>Home</a >
-          <a href='#'>About</a >
-          <a href='#'>Education</a >
-          <a href='#'>Skills</a >
+          <a href='#about'>About</a >
+          <a href='#skills'>Work</a >
+          <a href='#'>Contact</a >
          </ul>
       </div>
     </>
