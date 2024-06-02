@@ -1,0 +1,33 @@
+.edu-main{
+    height: 900px;
+
+
+}
+.edu-heading{
+    margin-top: 5%;
+    font-size: 250px;
+}
+.edu-list{
+    margin-left: 40%;
+}
+.edu-list li{
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: none;
+    list-style: upper-roman;
+    cursor: pointer;
+    transition: transform 1s ease;
+    transform-origin: center;
+}
+.edu-list li:hover {
+    animation: vibrate 1s infinite;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px hwb(105 0% 0%), 0 0 20px hwb(105 0% 0%), 0 0 25px hwb(105 0% 0%), 0 0 30px hwb(59 0% 0%), 0 0 35px hwb(59 0% 0%);
+}
+
+@keyframes vibrate {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}

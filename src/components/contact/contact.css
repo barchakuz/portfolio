@@ -1,0 +1,31 @@
+.contact h1{
+    font-size: 155px;
+}
+.c-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-icon{
+    font-size: 90px;
+    margin: 15%;
+}
+.contact-icon:hover{
+    color: yellow;
+    transition: 0.5s;
+}
+.In{
+    color: lightblue;
+}
+.gmail{
+    color: lightsalmon;
+}
+.git{
+    color: greenyellow;
+}
+.insta{
+    color: rgb(255, 47, 123);
+}
+.fb{
+    color: rgb(33, 84, 239);
+}

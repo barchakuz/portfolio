@@ -1,7 +1,7 @@
 import About  from './about/About'
 import Education  from './education/Education'
-import Experience  from './expeience/Experience'
 import Skills  from './skills/Skills'
+import Contact from './contact/Contact'
 
 
-export {About,Education, Experience, Skills}
+export {About,Education, Skills,Contact}
