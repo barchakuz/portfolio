@@ -1,0 +1,70 @@
+.skills-main{
+    width: 100%;
+}
+.container{
+    width: 80%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.skills-web-development,
+.skills-game-development{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 1em;
+}
+.project{
+    font-size: 30px;
+    width: 500px;
+    height: 400px;
+
+}
+.project:hover{
+    background-color: rgba(51, 51, 51, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: 0.7s;
+    border-radius: 2%;
+}
+.skills-heading{
+    font-size: 190px;
+    text-align: center;
+}
+.project h3{
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+}
+.icon-skills,.game-icon-skills{
+    font-size: 44px;
+    margin-right: 10px;
+    color: #333;
+    
+}
+.game-icon-skills:hover{
+    transition: 0.5s;
+    color: yellow;
+}
+
+.icon-skills:hover{
+    transition: 0.5s;
+    color: yellow;
+}
+.skills-img{
+    margin-left: 5%;
+    width: 450px;
+    height: 300px;
+    border-radius: 5%;
+}
+.link-box{
+    margin-left: 40%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+}
+.game-icon-skills{
+    color: aliceblue;
+}

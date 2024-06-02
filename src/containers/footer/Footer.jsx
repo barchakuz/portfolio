@@ -2,7 +2,7 @@ import React from 'react'
 import './footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import cover from '../../assets/Images/Logo-B.png'
+import cover from '../../assets/Images/Logo-w.png'
 
 
 
@@ -24,10 +24,10 @@ function Footer() {
         </div>
         <div className='footer-body-menu'>
           <ul className='footer-body-menu-list'>
-              <a href='#'>Home</a >
+              <a href='/'>Home</a >
               <a href='#about'>About</a >
-              <a href='#education'>Education</a >
-              <a href='#skills'>Skills</a >
+              <a href='#skills'>Work</a >
+              <a href='#education'>Contact</a >
          </ul>
         </div>
         <p>&copy; 2024 Behroze Aslam. All rights reserved.</p>
