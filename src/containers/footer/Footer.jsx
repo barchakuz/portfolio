@@ -6,9 +6,14 @@ import cover from '../../assets/Images/Logo-w.png'
 
 
 
-
-
 function Footer() {
+  const scrollToSection = (event, id) => {
+    event.preventDefault();
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <>
     <div className="main">
@@ -24,10 +29,10 @@ function Footer() {
         </div>
         <div className='footer-body-menu'>
           <ul className='footer-body-menu-list'>
-              <a href='/'>Home</a >
-              <a href='#about'>About</a >
-              <a href='#skills'>Work</a >
-              <a href='#education'>Contact</a >
+                <a href="#home" onClick={(e) => scrollToSection(e, 'home')}>Home</a >
+                <a href="#about" onClick={(e) => scrollToSection(e, 'about')}>About</a >
+                <a href="#skills" onClick={(e) => scrollToSection(e, 'skills')}>Work</a >
+                <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')}>Contact</a >
          </ul>
         </div>
         <p>&copy; 2024 Behroze Aslam. All rights reserved.</p>

@@ -13,10 +13,10 @@ import game from '../../assets/Images/game.png'
 import head from '../../assets/Images/head.png'
 import run from '../../assets/Images/run.png'
 
-function Skills() {
+function Skills({id}) {
   return (
     <>
-    <div className="skills-main">
+    <div className="skills-main" id='skills'>
         <h2 className='skills-heading'>Web Development</h2>
       <div className="container">
       <div className="skills-web-development">

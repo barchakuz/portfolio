@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faGithub, faLinkedinIn,faMailchimp } from '@fortawesome/free-brands-svg-icons';
 import './contact.css'
 
-function Contact() {
+function Contact({id}) {
   return (
     <>
-    <div className="contact">
+    <div className="contact" id='contact'>
       <h1>Contact me</h1>
       <div className="c-icon">
           <a href="https://www.linkedin.com/in/behroze-aslam-745b17190/" target='_blank'><FontAwesomeIcon icon={faLinkedinIn} className='contact-icon In'/></a>

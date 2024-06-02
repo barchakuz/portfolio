@@ -1,9 +1,9 @@
 import React from 'react'
 import './education.css'
-function Education() {
+function Education({id}) {
   return (
     <>
-    <div className="edu-main">
+    <div className="edu-main" id='education'>
       <h1 className='edu-heading'>Education</h1>
       <ul className='edu-list'>
         <li>Bachelor of Science in Software Engineering <br />

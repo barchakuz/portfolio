@@ -3,10 +3,10 @@ import './header.css'
 import me from '../../assets/Images/PP.jpg'
 import logo from '../../assets/Images/Logo-B.png'
 
-function Header() {
+function Header({id}) {
   return (
     <>
-      <div className='header-body'>
+      <div className='header-body' id='home'>
     
           <div className='header-body-img'>
               <img src={me} alt="Behroze-Picture"  className='me'/>
