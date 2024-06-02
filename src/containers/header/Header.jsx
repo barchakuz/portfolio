@@ -2,6 +2,7 @@ import React from 'react'
 import './header.css'
 import me from '../../assets/Images/PP.jpg'
 import logo from '../../assets/Images/Logo-B.png'
+
 function Header() {
   return (
     <>
@@ -16,7 +17,7 @@ function Header() {
               <h1>Hi, I am Behroze Aslam</h1>
               <h3>I am a Mern Stack and Game developer</h3>
               <p>Welcome to my portfolio! I'm a passionate Software Engineering graduate with a knack for crafting innovative solutions. Explore my projects, delve into my journey, and let's connect to collaborate on exciting opportunities</p>
-              <a href="#">Resume</a>
+              <a href="../../assets/Pdf/Resmue-B1.pdf" target='_blank'>Resume</a>
               <a href="#">CV</a>
             </div>
           </div>
