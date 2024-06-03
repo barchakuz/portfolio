@@ -152,7 +152,10 @@
       width: 80%;
     }
   }
-  
+  .mobile-menu-icon {
+    display: none; /* Hide by default */
+
+  }
   @media (max-width: 768px) {
     .header-body-info h1 {
       font-size: 26px;
