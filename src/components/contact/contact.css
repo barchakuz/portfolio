@@ -29,3 +29,24 @@
 .fb{
     color: rgb(33, 84, 239);
 }
+@media (max-width :786px) {
+    .contact{
+        height: 100%;
+    }
+    .contact h1{
+        color: aliceblue;
+        font-size: 50px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 
+        0 0 20px rgba(255, 255, 255, 0.5), 
+        0 0 30px rgba(255, 255, 255, 0.5), 
+        0 0 40px rgba(255, 255, 255, 0.5);
+        transition: box-shadow 0.5s ease-in-out;
+    }
+    .contact h1:hover{
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 
+        0 0 30px rgba(255, 255, 255, 0.8), 
+        0 0 40px rgba(255, 255, 255, 0.8), 
+        0 0 50px rgba(255, 255, 255, 0.8);
+    }
+}

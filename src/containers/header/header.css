@@ -103,4 +103,92 @@
       width: 510px; 
     }
   }
+  @media (max-width: 1024px) {
+    .header-body {
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+
   
+    .header-body-info {
+      width: 90%;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .header-body-info h1 {
+      font-size: 48px;
+      width: 100%;
+    }
+  
+    .header-body-info h3 {
+      font-size: 24px;
+    }
+  
+    .header-body-info p {
+      width: 100%;
+      font-size: 18px;
+    }
+  
+    .header-body-info-box {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .header-body-info-box a {
+      font-size: 20px;
+      width: 130px;
+      height: 45px;
+      line-height: 45px;
+    }
+  
+    .me {
+      width: 40%;
+      height: auto;
+      margin: 20px 0;
+    }
+  
+    .logo {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header-body-info h1 {
+      font-size: 26px;
+      animation: loadText 4s steps(20, end); 
+    }
+    @keyframes loadText {
+      0% {
+        width: 0; 
+      }
+      100% {
+        width: 80%; 
+      }
+    }
+  
+    .header-body-info h3 {
+      font-size: 20px;
+    }
+  
+    .header-body-info p {
+      font-size: 16px;
+    }
+  
+    .header-body-info-box a {
+      font-size: 18px;
+      width: 120px;
+      height: 40px;
+      line-height: 40px;
+    }
+  
+    .me {
+      width: 40%;
+      border-radius: 50%;
+      border: 10px solid #333;
+    }
+    .logo{
+        width: 70%;
+    }
+   
+  }

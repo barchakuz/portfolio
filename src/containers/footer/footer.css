@@ -51,3 +51,13 @@ p,
 .footer-body p{
     color: antiquewhite;
 }
+@media (max-width: 786px) {
+    .logo-img{
+        width: 100px;
+        margin-bottom: 10%;
+
+    }
+    .footer-body-icon{
+        margin-top: 10%;
+    }
+}

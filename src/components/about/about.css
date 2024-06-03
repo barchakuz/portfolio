@@ -26,3 +26,27 @@
     margin-right: 20%;
     font-size: 30px;
 }
+@media (max-width: 768px) {
+  .left h1{
+    font-size: 40px;
+  }
+  .left p{
+    font-size: 24px;
+    text-align: left;
+    font-weight: lighter;
+  }
+  
+}
+@media (max-width: 1024px){
+  .left h1{
+    font-size: 40px;
+  }
+  .left p{
+    font-size: 24px;
+    text-align: left;
+    font-weight: lighter;
+  }
+  .about-main{
+    height: 100%;
+  }
+}

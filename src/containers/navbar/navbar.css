@@ -53,5 +53,35 @@
     transition: 0.1s;
   }
   
+@media (max-width: 768px) {
+  .navbar-head-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .navbar-head-list.active {
+    display: flex;
+  }
+
+  .navbar-head-list a {
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    font-size: 60px;
+    width: 90px;
+  }
+
+  .logo-img {
+    width: 120px;
+  }
+}
+  
 
   

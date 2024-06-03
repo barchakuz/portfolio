@@ -31,3 +31,18 @@
     75% { transform: translate(-5px, 5px) rotate(-5deg); }
     100% { transform: translate(0, 0) rotate(0deg); }
 }
+@media (max-width : 768px) {
+    .edu-heading{
+        font-size: 50px;
+    }
+    .edu-main{
+        height: 100%;
+    }
+    .edu-list {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .edu-list li{
+        font-size: 20px;
+    }
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './navbar.css';
 import logo from '../../assets/Images/Logo-w.png';
 
@@ -20,11 +20,18 @@ const Menu = ({ scrollToSection }) => (
 );
 
 function Navbar() {
+  const [menuActive, setMenuActive] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
+
   const scrollToSection = (event, id) => {
     event.preventDefault();
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
+      setMenuActive(false); // Close the menu after selecting a section
     }
   };
 
@@ -32,9 +39,12 @@ function Navbar() {
     <>
       <div className='navbar-head'>
         <div>
-          <img src={logo} alt="Logo" className='logo-img'/>
+          <img src={logo} alt="Logo" className='logo-img' />
         </div>
-        <ul className='navbar-head-list'>
+        <div className='mobile-menu-icon' onClick={toggleMenu}>
+          &#9776; {/* This represents a hamburger icon */}
+        </div>
+        <ul className={`navbar-head-list ${menuActive ? 'active' : ''}`}>
           <Menu scrollToSection={scrollToSection} />
         </ul>
       </div>
