@@ -1,5 +1,5 @@
 import {About,Education, Skills,Contact} from './components/index.js'
-import {Footer,Header,Navbar } from './containers/index.js'
+import {Footer,Header,Navbar ,Temp} from './containers/index.js'
 import './App.css'
 
 
@@ -17,6 +17,8 @@ function App() {
     <Skills />
     <Contact />
     <Footer />
+    <Temp />
+    
    
     </>
   )

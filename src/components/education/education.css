@@ -1,6 +1,8 @@
+
 .edu-main{
     height: 900px;
-
+    overflow-x: hidden;
+    overflow-y: hidden;
 
 }
 .edu-heading{

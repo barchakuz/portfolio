@@ -1,197 +1,200 @@
 .header-body {
-    height: 600px;
-    width: 100%;
-    background-color: rgba(51, 51, 51, 0.094);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
+  height: 600px;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.094);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 5%;
+  
 
 }
 .header-body-img {
-    width: 100%;
+  width: 100%;
 }
 
 .header-body-info {
-    flex-direction: column; 
-    text-align: left;
-    width: 100%;
+  flex-direction: column; 
+  text-align: left;
+  width: 100%;
 
 }
 .header-body-info p{
-    width: 60%;
-    font-size: 20px;
+  width: 60%;
+  font-size: 20px;
 }
 .header-body-info h1{
-    background-color: rgb(195, 236, 222); 
-    font-size: 56px;
-    width: 510px;   
+  background-color: rgb(195, 236, 222); 
+  font-size: 56px;
+  width: 510px;   
 }
 .header-body-info h3{
-    font-size: 28px;   
+  font-size: 28px;   
 }
 .header-body-img,
 .header-body-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .header-body-info-box {
-    margin-left: 20%;
+  margin-left: 20%;
 }
 .header-body-info-box a{
-    display: inline-block; 
-    text-decoration: none;
-    font-size: 24px;
-    margin-right: 2%;
-    color: aliceblue;
-    background-color: #333;
-    width: 150px; 
-    height: 50px; 
-    line-height: 50px; 
-    text-align: center; 
-    margin-top: 10px; 
+  display: inline-block; 
+  text-decoration: none;
+  font-size: 24px;
+  margin-right: 2%;
+  color: aliceblue;
+  background-color: #333;
+  width: 150px; 
+  height: 50px; 
+  line-height: 50px; 
+  text-align: center; 
+  margin-top: 10px; 
 }
 .header-body-info-box a:hover{
-    color: yellow;
-    transition: 0.5s;
+  color: yellow;
+  transition: 0.5s;
 }
 .me{
-    width: 30%;
-    height: 50%;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 20px solid #333;
-    animation: mymove 20s linear infinite;
+  width: 30%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 20px solid #333;
+  animation: mymove 20s linear infinite;
 }
 @keyframes mymove {
-    100% { transform: rotate(360deg);}
-    
+  100% { transform: rotate(360deg);}
+  
 }
 .me:hover {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 .header-body-img{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .logo{
-    opacity: 0;
-    animation: fadeIn 5s ease-in-out forwards;
+  opacity: 0;
+  animation: fadeIn 5s ease-in-out forwards;
 }
 @keyframes fadeIn {
-    from {
-      opacity: 0; 
-    }
-    to {
-      opacity: 1;
-    }
+  from {
+    opacity: 0; 
+  }
+  to {
+    opacity: 1;
+  }
 }
 .header-body-info-box h1{
-    animation: loadText 4s steps(20, end); 
-    overflow: hidden; 
-    white-space: nowrap; 
-    border-right: 3px solid #000; 
+  animation: loadText 4s steps(20, end); 
+  overflow: hidden; 
+  white-space: nowrap; 
+  border-right: 3px solid #000; 
+}
+
+@keyframes loadText {
+  0% {
+    width: 0; 
   }
-  
+  100% {
+    width: 510px; 
+  }
+}
+@media (max-width: 1024px) {
+  .header-body {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+
+  .header-body-info {
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .header-body-info h1 {
+    font-size: 48px;
+    width: 100%;
+  }
+
+  .header-body-info h3 {
+    font-size: 24px;
+  }
+
+  .header-body-info p {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .header-body-info-box {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .header-body-info-box a {
+    font-size: 20px;
+    width: 130px;
+    height: 45px;
+    line-height: 45px;
+  }
+
+  .me {
+    width: 40%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .logo {
+    width: 80%;
+  }
+}
+.mobile-menu-icon {
+  display: none; /* Hide by default */
+
+}
+@media (max-width: 768px) {
+  .header-body{
+    padding-top: 25%;
+  }
+  .header-body-info h1 {
+    font-size: 26px;
+    animation: loadText 4s steps(20, end); 
+  }
   @keyframes loadText {
     0% {
       width: 0; 
     }
     100% {
-      width: 510px; 
+      width: 80%; 
     }
   }
-  @media (max-width: 1024px) {
-    .header-body {
-      grid-template-columns: 1fr;
-      height: auto;
-    }
 
-  
-    .header-body-info {
-      width: 90%;
-      padding: 20px;
-      text-align: center;
-    }
-  
-    .header-body-info h1 {
-      font-size: 48px;
-      width: 100%;
-    }
-  
-    .header-body-info h3 {
-      font-size: 24px;
-    }
-  
-    .header-body-info p {
-      width: 100%;
-      font-size: 18px;
-    }
-  
-    .header-body-info-box {
-      margin-left: 0;
-      width: 100%;
-    }
-  
-    .header-body-info-box a {
-      font-size: 20px;
-      width: 130px;
-      height: 45px;
-      line-height: 45px;
-    }
-  
-    .me {
-      width: 40%;
-      height: auto;
-      margin: 20px 0;
-    }
-  
-    .logo {
-      width: 80%;
-    }
+  .header-body-info h3 {
+    font-size: 20px;
   }
-  .mobile-menu-icon {
-    display: none; /* Hide by default */
 
+  .header-body-info p {
+    font-size: 16px;
   }
-  @media (max-width: 768px) {
-    .header-body-info h1 {
-      font-size: 26px;
-      animation: loadText 4s steps(20, end); 
-    }
-    @keyframes loadText {
-      0% {
-        width: 0; 
-      }
-      100% {
-        width: 80%; 
-      }
-    }
-  
-    .header-body-info h3 {
-      font-size: 20px;
-    }
-  
-    .header-body-info p {
-      font-size: 16px;
-    }
-  
-    .header-body-info-box a {
-      font-size: 18px;
-      width: 120px;
-      height: 40px;
-      line-height: 40px;
-    }
-  
-    .me {
-      width: 40%;
-      border-radius: 50%;
-      border: 10px solid #333;
-    }
-    .logo{
-        width: 70%;
-    }
-   
+
+  .header-body-info-box a {
+    font-size: 18px;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
   }
+  .me {
+    width: 40%;
+    border-radius: 50%;
+    border: 10px solid #333;
+  }
+  .logo{
+      width: 70%;
+  }
+ 
+}

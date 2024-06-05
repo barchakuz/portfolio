@@ -8,7 +8,7 @@ function Header({id}) {
   return (
     <>
       <div className='header-body' id='home'>
-    
+
           <div className='header-body-img'>
               <img src={me} alt="Behroze-Picture"  className='me'/>
               <img src={logo} alt="Logo" className='logo'/>
@@ -23,7 +23,7 @@ function Header({id}) {
             </div>
           </div>
       
-      </div>
+        </div>
     </>
   )
 }

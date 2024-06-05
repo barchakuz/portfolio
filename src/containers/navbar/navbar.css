@@ -11,6 +11,10 @@
   }
   
   .navbar-head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,6 +58,11 @@
   }
   
 @media (max-width: 768px) {
+  .navbar-head{
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
   .navbar-head-list {
     display: none;
     flex-direction: column;
